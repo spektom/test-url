@@ -1,17 +1,3 @@
-/*
-   +----------------------------------------------------------------+
-   | Zend Test Engine                                               |
-   +----------------------------------------------------------------+
-   | Copyright (c) 1998-2004 Zend Technologies Ltd.                 |
-   +----------------------------------------------------------------+
-   | The contents of this source file is the sole property of       |
-   | Zend Technologies Ltd.  Unauthorized duplication or access is  |
-   | prohibited.                                                    |
-   +----------------------------------------------------------------+
-   | Author:  Michael Spector <michael@zend.com>                    |
-   +----------------------------------------------------------------+
-*/
-
 #include <sys/types.h>
 #include <stdarg.h>
 #include <stdio.h>
@@ -1045,7 +1031,7 @@ int main(int argc, char **argv)
 	if(argv[0][0] != '/') { /* set program name to full path */
 		snprintf (prog_name, RESOURCE_PATH_MAX, "%s/%s",  getcwd(prog_argv, RESOURCE_PATH_MAX), argv[0]);
 		prog_argv[0] = prog_name;
-		printf ("Setting progname to: %s\n", prog_name);
+		//printf ("Setting progname to: %s\n", prog_name);
 	}
 #endif /* M_UNIX */
 
