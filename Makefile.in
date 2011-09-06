@@ -1,0 +1,12 @@
+CC=gcc
+CFLAGS+=-g -W
+
+LIBS=@LIBS@
+
+P=test_url
+
+all:
+	$(CC) $(CFLAGS) -o $(P) $(P).c $(LIBS)
+
+clean:
+	rm -f $(P)
