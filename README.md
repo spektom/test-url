@@ -12,10 +12,8 @@ Installing
 ----------
 `./buildconf.sh && ./configure && make install`
 
-Usage
------
-
-* Common usage:
+Common usage
+------------
 
 <pre>
 USAGE: test_url [options] url | test_url -D
@@ -32,14 +30,10 @@ options:
 -a           Print average of all slaves results
 </pre>
 
-* Running benchmark from several slaves:
+Running benchmark from several slaves
+--------------------------------------
 
-    * On each slave, run benchmark daemon:
-
-      `test_url -D`
-
-    * Prepare a file containing IP of slave machines
-    * Run master client:
-
-      `test_url -M file`
+* On each slave, run benchmark daemon: `test_url -D`
+* Prepare a file containing IP of slave machines
+* Run master client: `test_url -M slaves.txt`
 
